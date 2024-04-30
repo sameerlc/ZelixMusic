@@ -36,7 +36,7 @@ module.exports = class About extends Command {
         .setLabel("Invite ZelixMusic")
         .setStyle(ButtonStyle.Link)
         .setURL(
-          `https://discord.com/api/oauth2/authorize?client_id=875635121770889257&permissions=8&scope=bot%20applications.commands`,
+          `https://discord.com/api/oauth2/authorize?client_id=1234462130921672745&permissions=8&scope=bot%20applications.commands`,
         ),
       new ButtonBuilder()
         .setLabel("Support Server")
@@ -57,7 +57,7 @@ module.exports = class About extends Command {
       .addFields([
         {
           name: "Owner",
-          value: "[Zelix](https://guns.lol/zelix_xd)",
+          value: "[Zelix](https://guns.lol/zelix_xd) , [Lucifer](https://discord.com/channels/@me/1227642481420800060)",
           inline: true,
         },
         {
