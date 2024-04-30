@@ -38,9 +38,9 @@ module.exports = class Help extends Command {
   async run(client, ctx, args) {
     const embed = client.embed();
     const prefix = await client.db.getPrefix(ctx.guild.id);
-    
+
     const commands = this.client.commands.filter(
-      (cmd) => cmd.category !== "dev"
+      (cmd) => cmd.category !== "dev",
     );
     const categories = commands
       .map((cmd) => cmd.category)
@@ -59,9 +59,9 @@ module.exports = class Help extends Command {
       });
       const helpEmbed = embed
         .setColor(this.client.color.main)
-        .setTitle("Help Menu")
+        .setTitle("<:icons_home:1231875990238793780> Help Menu")
         .setDescription(
-          `Hey there! I'm ${this.client.user.username}, a music bot made with [WaveMusic](https://github.com/appujet/WaveMusic) and Discord. You can use \`${prefix.prefix}help <command>\` to get more info on a command.`
+          `Hey there! I'm ${this.client.user.username}, a music bot developed to Play Your Intereset Music`,
         )
         .setFooter({
           text: `Use ${prefix.prefix}help <command> for more info on a command`,
@@ -82,8 +82,9 @@ module.exports = class Help extends Command {
       const embed = this.client.embed();
       const helpEmbed = embed
         .setColor(this.client.color.main)
-        .setTitle(`Help Menu - ${command.name}`)
-        .setDescription(`**Description:** ${command.description.content}
+        .setTitle(
+          `<:icons_home:1231875990238793780> Help Menu - ${command.name}`,
+        ).setDescription(`**Description:** ${command.description.content}
 **Usage:** ${prefix.prefix}${command.description.usage}
 **Examples:** ${command.description.examples
         .map((example) => `${prefix.prefix}${example}`)
