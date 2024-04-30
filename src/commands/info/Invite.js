@@ -49,9 +49,9 @@ module.exports = class Invite extends Command {
           `https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=8&scope=bot%20applications.commands`
         ),
       new ButtonBuilder()
-        .setLabel("My Server")
+        .setLabel("Support Server")
         .setStyle(ButtonStyle.Link)
-        .setURL("https://discord.gg/STXurwnZD5")
+        .setURL("https://discord.gg//KfKve3n4cP")
     );
     return await ctx.sendMessage({
       embeds: [
