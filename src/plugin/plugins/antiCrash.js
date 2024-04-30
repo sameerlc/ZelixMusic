@@ -1,7 +1,7 @@
 const antiCrash = {
     name: 'AntiCrash Plugin',
     version: '1.0.0',
-    author: 'Blacky',
+    author: 'Samir',
     initialize: (client) => {
         process.on('unhandledRejection', (reason, promise) => {
             client.logger.error('Unhandled Rejection at:', promise, 'reason:', reason);
