@@ -3,7 +3,7 @@ const http = require('http');
 const keepAlive = {
     name: 'KeepAlive Plugin',
     version: '1.0.0',
-    author: 'Blacky',
+    author: 'Samir',
     initialize: (client) => {
         if (client.config.keepAlive) {
             const server = http.createServer((req, res) => {
